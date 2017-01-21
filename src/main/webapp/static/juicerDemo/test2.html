@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>juicer测试</title>
+    <script type="text/javascript" src="../framework/jquery/jquery-1.6.2.js"></script>
+    <script type="text/javascript" src="../framework/juicer/juicer.js"></script>
+</head>
+<body>
+<!--建立一个div来接收渲染结果-->
+<div id="result"></div>
+<script type="text/javascript">
+    var json = {
+        links: [
+            {href: 'http://juicer.name', alt: 'Juicer'},
+            {href: 'http://benben.cc', alt: 'Benben'},
+            {href: 'http://ued.taobao.com', alt: 'Taobao UED'}
+        ]
+    };
+    var tpl = "" +
+            "{@each links as item,index}" +
+              "$${item|reg}"+
+            "{@/each}" +
+            "" +
+            "";
+    var fun = function(data){
+        return '<a href='+data.href+'>'+data.alt+'</a>';
+    }
+    juicer.register("reg",fun);
+    $("#result").html(juicer(tpl,json));
+</script>
+</body>
+</html>

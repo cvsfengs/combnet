@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>语言翻译界面展示</title>
+    <link rel="stylesheet" type="text/css" href="../framework/jqueryEasyUI/themes/default/easyui.css"/>
+    <link rel="stylesheet" type="text/css" href="../framework/jqueryEasyUI/themes/icon.css"/>
+    <link rel="stylesheet" type="text/css" href="../translate/css/icon.css"/>
+    <script type="text/javascript" src="../framework/jquery/jquery-1.6.2.js"></script>
+    <script type="text/javascript" src="../framework/jqueryEasyUI/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="../translate/js/translate.js"></script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <input id="fromId" class="easyui-combobox"
+                       name="language"
+                       data-options="
+					    url:'/xcore/language/getLanguage.do',
+					    valueField:'eName',
+					    textField:'cName',
+					    multiple:false,
+					    panelHeight:'auto'
+			        ">
+            </td>
+            <td>
+                <a href="javascript:void(0)" onclick="TRANSLATE.doTranslate()" class="iconfont" style="text-decoration: none">&#xe75a;</a>
+            </td>
+            <td>
+                <input id="toId" class="easyui-combobox"
+                       name="language"
+                       data-options="
+					    url:'/xcore/language/getLanguage.do',
+					    valueField:'eName',
+					    textField:'cName',
+					    multiple:false,
+					    panelHeight:'auto'
+			        ">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <textarea id="fromValue"></textarea>
+            </td>
+            <td></td>
+            <td>
+                <textarea id="toValue"></textarea>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

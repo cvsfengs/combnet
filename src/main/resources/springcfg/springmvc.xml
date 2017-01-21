@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/mvc
+       http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+       <!--扫描包路径-->
+       <context:component-scan base-package="com.comb">
+              <context:exclude-filter type="annotation" expression="org.springframework.stereotype.Repository"/>
+       </context:component-scan>
+
+       <bean id="resultObject" scope="prototype" class="com.comb.commons.utils.result.ResultObject"/>
+       <!-- 开启注解  默认ISO-88591-->
+       <mvc:annotation-driven>
+              <mvc:message-converters register-defaults="true">
+                     <bean class="org.springframework.http.converter.StringHttpMessageConverter">
+                            <constructor-arg value="UTF-8"/>
+                     </bean>
+              </mvc:message-converters>
+       </mvc:annotation-driven>
+       <mvc:default-servlet-handler/>
+       <!-- 解析静态文件 -->
+       <mvc:resources location="/static/framework/" mapping="/static/framework/**"/>
+       <mvc:resources location="/static/user/" mapping="/static/user/**"/>
+       <!-- <mvc:resources location="/*.html" mapping="/*.html" />-->
+       <mvc:resources location="/static/" mapping="*/static/**"/>
+       <!-- 全局异常 -->
+       <bean class="com.comb.exceptions.CommonsExceptionResolve" lazy-init="false"/>
+       <!-- 文件上传 -->
+       <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+              <!-- 默认编码 -->
+              <property name="defaultEncoding" value="utf-8" />
+              <!-- 设置上传文件的最大尺寸为5MB -->
+              <property name="maxUploadSize">
+                     <value>5242880</value>
+              </property>
+              <!-- 内存中的最大值 -->
+              <property name="maxInMemorySize" value="40960" />
+       </bean>
+       <!--最开始我想的是用拦截器来获取数据源,在相应的方法上用注解进行标注,但是 我放弃了这种做法-->
+       <!--
+               <mvc:interceptors>
+                   <bean class="com.xuser.interceptors.DataSourceInterceptor"></bean>
+               </mvc:interceptors>
+       -->
+
+       <!--  避免返回为json类型出现下载的状况  -->
+       <bean id="mappingHandlerMapping" class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping" />
+       <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
+              <property name="messageConverters">
+                     <list>
+                            <bean class="org.springframework.http.converter.StringHttpMessageConverter">
+                                   <property name="supportedMediaTypes">
+                                          <list>
+                                                 <value>text/html; charset=UTF-8</value>
+                                                 <value>application/json;charset=UTF-8</value>
+                                          </list>
+                                   </property>
+                            </bean>
+                            <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
+                                   <property name="supportedMediaTypes">
+                                          <list>
+                                                 <value>text/html;charset=UTF-8</value>
+                                                 <value>application/json;charset=UTF-8</value>
+                                          </list>
+                                   </property>
+                            </bean>
+                     </list>
+              </property>
+       </bean>
+       <!-- 视图解析器 -->
+       <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" >
+              <!-- 返回路径前缀 -->
+              <property name="prefix" value="/"/>
+              <!-- 返回路径后缀 -->
+              <property name="suffix" value=".html"/>
+       </bean>
+
+</beans>

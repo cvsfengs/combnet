@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.comb.user.dao.UserDao">
+
+	<select id="getUser" parameterType="com.comb.user.pojo.User" resultType="com.comb.user.pojo.User">
+		SELECT
+			adminuser.userId AS 'userId',
+			adminuser.email as 'email' ,
+			adminuser.password AS 'password'
+		FROM adminuser
+		WHERE
+			adminuser.email=#{email}
+		AND
+			adminuser.password=#{password}
+	</select>
+	
+</mapper>

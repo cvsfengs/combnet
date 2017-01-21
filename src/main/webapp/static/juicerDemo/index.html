@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>juicer测试</title>
+    <script type="text/javascript" src="../framework/jquery/jquery-1.6.2.js"></script>
+    <script type="text/javascript" src="../framework/juicer/juicer.js"></script>
+</head>
+<body>
+<!--下面是模板-->
+<script id="tpl" type="text/template">
+    <ul>
+        {@each list as it,index}
+        <li>${it.name} (index:${index})</li>
+        <!--<li>${it.show} (index:${index})</li>-->
+        {@/each}
+        {@each blah as it}
+        <li>
+            num:${it.num}<br/>
+            {@if it.num==3}
+            {@each it.inner as it2}
+            ${it2.time}<br/>
+            {@/each}
+            {@/if}
+        </li>
+        {@/each}
+    </ul>
+</script>
+<!--建立一个div来接收渲染结果-->
+<div id="result"></div>
+
+<script type="text/javascript">
+    var data={
+        list:[
+            {name:'firstname',show:true},
+            {name:'secondname',show:false},
+            {name:'thirdname',show:true}
+        ],
+        blah:[
+            {num:1},
+            {num:2},
+            {num:3,inner:[
+                {'time':'15:00'},
+                {'time':'16:00'},
+                {'time':'17:00'},
+                {'time':'18:00'}
+            ]},
+            {num:4}
+        ]
+    };
+    var tpl=$("#tpl").html();
+    //var tpl=document.getElementById("tpl").innerHTML;
+    var html=juicer(tpl,data); //得到渲染结果，需要放到DOM元素中才能在页面中显示
+    document.getElementById("result").innerHTML=html;
+    //console.log(html)//编译模板并立即渲染出结果，官方文档少了这一块，所以看不到结果
+</script>
+</body>
+</html>

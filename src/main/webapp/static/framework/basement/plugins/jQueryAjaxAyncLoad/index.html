@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>jQuery树形下拉菜单DEMO演示</title>
+
+<link rel="stylesheet" href="tree_files/font-awesome.min.css">
+
+
+<!-- ace styles -->
+<link rel="stylesheet" href="tree_files/ace.min.css">
+
+</head>
+
+<body>
+
+<div class="row">
+	<div class="col-sm-6">
+		<div class="widget-box">
+			<div class="widget-header header-color-blue2">
+				<h4 class="lighter smaller">Choose Categories</h4>
+			</div>
+
+			<div class="widget-body">
+				<div class="widget-main padding-8">
+					<div id="tree1" class="tree tree-selectable"><div class="tree-folder" style="display:none;">				<div class="tree-folder-header">					<i class="icon-plus"></i>					<div class="tree-folder-name"></div>				</div>				<div class="tree-folder-content"></div>				<div class="tree-loader" style="display: none;"></div>			</div>			<div class="tree-item" style="display:none;">				<i class="icon-remove"></i>				<div class="tree-item-name"></div>			</div><div class="tree-folder" style="display: block;">				<div class="tree-folder-header">					<i class="icon-plus"></i>					<div class="tree-folder-name">For Sale</div>				</div>				<div class="tree-folder-content"></div>				<div class="tree-loader" style="display: none;"><div class="tree-loading"><i class="icon-refresh icon-spin blue"></i></div></div>			</div><div class="tree-folder" style="display: block;">				<div class="tree-folder-header">					<i class="icon-plus"></i>					<div class="tree-folder-name">Vehicles</div>				</div>				<div class="tree-folder-content"></div>				<div class="tree-loader" style="display: none;"><div class="tree-loading"><i class="icon-refresh icon-spin blue"></i></div></div>			</div><div class="tree-folder" style="display: block;">				<div class="tree-folder-header">					<i class="icon-plus"></i>					<div class="tree-folder-name">Rentals</div>				</div>				<div class="tree-folder-content"></div>				<div class="tree-loader" style="display: none;"><div class="tree-loading"><i class="icon-refresh icon-spin blue"></i></div></div>			</div><div class="tree-folder" style="display: block;">				<div class="tree-folder-header">					<i class="icon-plus"></i>					<div class="tree-folder-name">Real Estate</div>				</div>				<div class="tree-folder-content"></div>				<div class="tree-loader" style="display: none;"><div class="tree-loading"><i class="icon-refresh icon-spin blue"></i></div></div>			</div><div class="tree-folder" style="display: block;">				<div class="tree-folder-header">					<i class="icon-plus"></i>					<div class="tree-folder-name">Pets</div>				</div>				<div class="tree-folder-content"></div>				<div class="tree-loader" style="display: none;"><div class="tree-loading"><i class="icon-refresh icon-spin blue"></i></div></div>			</div><div class="tree-item" style="display: block;">				<i class="icon-remove"></i>				<div class="tree-item-name">Tickets</div>			</div><div class="tree-item" style="display: block;">				<i class="icon-remove"></i>				<div class="tree-item-name">Services</div>			</div><div class="tree-item" style="display: block;">				<i class="icon-remove"></i>				<div class="tree-item-name">Personals</div>			</div></div>
+				</div>
+			</div>
+		</div>
+	</div>
+<div style="text-align:center;clear:both">
+				<script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
+				<script src="/follow.js" type="text/javascript"></script>
+				</div>
+
+	<div class="col-sm-6">
+		<div class="widget-box">
+			<div class="widget-header header-color-green2">
+				<h4 class="lighter smaller">Browse Files</h4>
+			</div>
+
+			<div class="widget-body">
+				<div class="widget-main padding-8">
+					<div id="tree2" class="tree tree-unselectable">
+						<div class="tree-folder" style="display:none;">
+							<div class="tree-folder-header">
+								<i class="icon-folder-close"></i>
+								<div class="tree-folder-name"></div>
+							</div>
+							<div class="tree-folder-content"></div>
+							<div class="tree-loader" style="display: none;"></div>
+						</div>
+						<div class="tree-item" style="display:none;">
+							<div class="tree-item-name"></div>
+						</div>
+						<div class="tree-folder" style="display: block;">
+							<div class="tree-folder-header">
+								<i class="icon-folder-close "></i>
+								<div class="tree-folder-name">Pictures</div>
+							</div>
+							<div class="tree-folder-content"></div>
+							<div class="tree-loader" style="display: none;">
+								<div class="tree-loading">
+									<i class="icon-refresh icon-spin "></i>
+								</div>
+							</div>
+						</div>
+						<div class="tree-folder" style="display: block;">
+							<div class="tree-folder-header">
+								<i class="icon-folder-close "></i>
+								<div class="tree-folder-name">Music</div>
+							</div>
+							<div class="tree-folder-content"></div>
+							<div class="tree-loader" style="display: none;">
+								<div class="tree-loading">
+									<i class="icon-refresh icon-spin "></i>
+								</div>
+							</div>
+						</div>
+						<div class="tree-folder" style="display: block;">
+							<div class="tree-folder-header">
+								<i class="icon-folder-close "></i>
+								<div class="tree-folder-name">Video</div>
+							</div>
+							<div class="tree-folder-content"></div>
+							<div class="tree-loader" style="display: none;">
+								<div class="tree-loading">
+									<i class="icon-refresh icon-spin blue"></i>
+								</div>
+							</div>
+						</div>
+						<div class="tree-folder" style="display: block;">
+							<div class="tree-folder-header">
+								<i class="icon-folder-close "></i>
+								<div class="tree-folder-name">Documents</div>
+							</div>
+							<div class="tree-folder-content"></div>
+							<div class="tree-loader" style="display: none;">
+								<div class="tree-loading">
+									<i class="icon-refresh icon-spin "></i>
+								</div>
+							</div>
+						</div>
+						<div class="tree-folder" style="display: block;">
+							<div class="tree-folder-header">
+								<i class="icon-folder-close"></i>
+								<div class="tree-folder-name">Backup</div>
+							</div>
+							<div class="tree-folder-content"></div>
+							<div class="tree-loader" style="display: none;">
+								<div class="tree-loading">
+									<i class="icon-refresh icon-spin "></i>
+								</div>
+							</div>
+						</div>
+						<div class="tree-item" style="display: block;">
+							<div class="tree-item-name">
+								<i class="icon-file-text "></i> ReadMe.txt</div>
+						</div>
+						<div class="tree-item" style="display: block;">
+							<div class="tree-item-name">
+								<i class="icon-book blue"></i> Manual.html</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+
+
+
+<!--[if !IE]> -->
+
+<script src="tree_files/jquery-2.0.3.min.js"></script>
+
+<!-- <![endif]-->
+
+<script src="tree_files/bootstrap.min.js"></script>
+
+<!-- page specific plugin scripts -->
+
+<script src="tree_files/fuelux.tree-sampledata.js"></script>
+<script src="tree_files/fuelux.tree.min.js"></script>
+
+<!-- ace scripts -->
+
+<script src="tree_files/ace-elements.min.js"></script>
+<script src="tree_files/ace.min.js"></script>
+
+<!-- inline scripts related to this page -->
+
+<script type="text/javascript">
+jQuery(function($){
+
+	$('#tree1').ace_tree({
+		dataSource: treeDataSource ,
+		multiSelect:true,
+		loadingHTML:'<div class="tree-loading"><i class="icon-refresh icon-spin blue"></i></div>',
+		'open-icon' : 'icon-minus',
+		'close-icon' : 'icon-plus',
+		'selectable' : true,
+		'selected-icon' : 'icon-ok',
+		'unselected-icon' : 'icon-remove'
+	});
+	
+	$('#tree2').ace_tree({
+		dataSource: treeDataSource2 ,
+		loadingHTML:'<div class="tree-loading"><i class="icon-refresh icon-spin blue"></i></div>',
+		'open-icon' : 'icon-folder-open',
+		'close-icon' : 'icon-folder-close',
+		'selectable' : false,
+		'selected-icon' : null,
+		'unselected-icon' : null
+	});
+	
+});
+</script>
+<style type="text/css">.footContent{line-height: 20px;font-size: 12px;}.footContent,.copyright{width:100%}.footContent p,.copyright p{margin:5px auto; text-align:center}.footContent a{text-decoration:none;color: #444333;}</style><div style="text-align:center;clear:both;margin-top:20px;font-size: 14px;font-family: 微软雅黑;"><p>适用浏览器：IE8、360、FireFox、Chrome、Safari、Opera、傲游、搜狗、世界之窗. </p></div><div class="footContent"><p><a rel="nofollow" href="http://www.sucaijiayuan.com/aboutus/about.html?down_demo" target="_blank">关于素材家园</a> - <a rel="nofollow" href="http://www.sucaijiayuan.com/aboutus/contact.html?down_demo" target="_blank">联系我们</a> - <a rel="nofollow" href="http://www.sucaijiayuan.com/aboutus/copyright.html?down_demo" target="_blank">版权声明</a> - <a rel="nofollow" href="http://www.sucaijiayuan.com/aboutus/help.html?down_demo" target="_blank">帮助说明</a> - <a rel="nofollow" href="http://www.sucaijiayuan.com/aboutus/tougao.html?down_demo" target="_blank">在线投稿</a> - <a href="http://wpa.qq.com/msgrd?v=3&uin=97576600&site=qq&menu=yes">意见反馈</a></p><p>声明：本站所有素材/文章除标明原创外，均来自网络转载，版权归原作者所有，如果有侵犯到您的权益，请联系本站删除，谢谢合作！</p><div class="copyright"><p>Copyright © 2016 Www.SuCaiJiaYuan.Com 鄂ICP备13014750号 <a href="http://www.sucaijiayuan.com/?down_demo">素材家园</a> 版权所有</p></div></div>
+<div style="display:none"><script src="http://s4.cnzz.com/stat.php?id=1259350246&web_id=1259350246" language="JavaScript"></script></div>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?cc58f09bfb6ccacac51c4e5d7787d7d0";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

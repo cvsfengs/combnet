@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.comb.base.dao.BaseCityDao">
+
+	<select id="getCitys" parameterType="com.comb.commons.pojo.EasyUIRequestPagination" resultType="com.comb.base.pojo.BaseCity">
+		SELECT
+		 	china.id as 'id',
+		 	china.name as 'name',
+		 	china.pid as 'pid'
+		FROM china
+		LIMIT #{page},#{rows}
+	</select>
+
+	<select id="getCitysCount" resultType="int">
+		SELECT
+		 COUNT(*)
+		FROM china
+	</select>
+
+	<select id="testCount" parameterType="int" resultType="int">
+		SELECT count(*) from testw
+	</select>
+
+</mapper>

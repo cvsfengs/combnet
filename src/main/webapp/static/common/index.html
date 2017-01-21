@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" type="text/css" href="../framework/jqueryEasyUI/themes/default/easyui.css"/>
+    <link rel="stylesheet" type="text/css" href="../framework/jqueryEasyUI/themes/icon.css"/>
+    <script type="text/javascript" src="../framework/jquery/jquery-1.6.2.js"></script>
+    <script type="text/javascript" src="../framework/jqueryEasyUI/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="js/commom.js"></script>
+</head>
+<body class="easyui-layout">
+<div region="north" title="north" border="true" split="true" style="height:70px;padding:5px;">
+    <select id="cc1" class="easyui-combobox" name="state" style="width:100px;">
+        <option value="west">west</option>
+        <option value="east">east</option>
+        <option value="north">north</option>
+        <option value="south">south</option>
+        <option value="all">all</option>
+    </select>
+    <a href="#" class="easyui-linkbutton" plain="false" style="margin-right:100px;" onClick="javascript:hidden()">隐藏:</a>
+    <select id="cc2" class="easyui-combobox" name="state" style="width:100px;">
+        <option value="west">west</option>
+        <option value="east">east</option>
+        <option value="north">north</option>
+        <option value="south">south</option>
+        <option value="all">all</option>
+    </select>
+    <a href="#" class="easyui-linkbutton" plain="false" onClick="javascript:show()">显示:</a>
+</div>
+<!--左侧菜单功能区-->
+<div region="west" split="true" title="菜单选项" style="width:150px;padding:0px;">
+    <div id="parentMenu" class="easyui-accordion" data-options="fit:true,border:false"></div>
+</div>
+<div region="center"  border="false" split="true" title="菜单详情">
+    <div id="easytabs" class="easyui-tabs" data-options="fit:true,border:false,plain:true">
+    </div>
+</div>
+</body>
+</html>

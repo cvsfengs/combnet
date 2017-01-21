@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>juicer测试</title>
+    <script type="text/javascript" src="../framework/jquery/jquery-1.6.2.js"></script>
+    <script type="text/javascript" src="../framework/juicer/juicer.js"></script>
+</head>
+<body>
+<!--下面是模板-->
+<script id="tpl" type="text/template">
+    <ul>
+        {@each list as ls,index}
+            <li><a href=ls.name>ls.show</a></li>
+        {@/each}
+    </ul>
+</script>
+<!--建立一个div来接收渲染结果-->
+<div id="result"></div>
+
+<script type="text/javascript">
+    var json = {
+        links: [
+            {href: 'http://juicer.name', alt: 'Juicer'},
+            {href: 'http://benben.cc', alt: 'Benben'},
+            {href: 'http://ued.taobao.com', alt: 'Taobao UED'}
+        ]
+    };
+
+    var tpl = [
+        '{@each links as item}',
+        '$${item|links_builds} <br />',
+        '{@/each}'
+    ].join('');
+
+    var links = function(data) {
+        return '<a href="' + data.href + '" alt="' + data.alt + '" >data.href</a>';
+    };
+
+    juicer.register('links_builds', links); //注册自定义函数
+    $("#result").html(juicer(tpl, json));
+
+</script>
+</body>
+</html>

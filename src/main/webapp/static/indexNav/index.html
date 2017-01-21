@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>导航页Nav</title>
+		<link rel="stylesheet" type="text/css" href="css/easyui.css"/>
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/other.css" />
+		<link rel="stylesheet" type="text/css" href="css/sidebar.css" />
+	</head>
+	<body>
+	<div class="htmleaf-container">
+		<header class="htmleaf-header">
+			<h1>XCORE集成系统面板 <span>XCORE System Building</span></h1>
+		</header>
+	</div>
+	<nav id="menu" class="menu">
+			<button id="menuButton" class="menuHandle"><span></span></button>
+			<div class="menuInner">
+				<ul id="parentMenu"></ul>
+			</div>
+			<div class="morph-shape" data-morph-open="M300-10c0,0,295,164,295,410c0,232-295,410-295,410" data-morph-close="M300-10C300-10,5,154,5,400c0,232,295,410,295,410">
+				<svg width="100%" height="100%" viewBox="0 0 600 800" preserveAspectRatio="none">
+					<path fill="none" d="M300-10c0,0,0,164,0,410c0,232,0,410,0,410"/>
+				</svg>
+			</div>
+		</nav>
+		<div style="width:83%;height: 100%;float: right;"><!--border:2px solid red;-->
+			<div id="easytabs" class="easyui-tabs" style="height: 100%" data-options="fit:true,border:false,plain:true"></div>
+		</div>
+		<script src="js/snap.svg-min.js"></script>
+		<script src="js/classie.js"></script>
+		<script src="js/indexNav.js"></script>
+		<script type="text/javascript" src="../framework/jquery/jquery-1.6.2.js"></script>
+		<script type="text/javascript" src="../framework/jqueryEasyUI/jquery.easyui.min.js"></script>
+		<script type="text/javascript" src="js/commom.js"></script>
+	</body>
+</html>

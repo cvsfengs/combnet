@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="utf-8">
+	<title>XCORE 集成</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/supersized.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/keyboard.css">
+<!--
+	<link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+-->
+	<link rel="stylesheet" href="css/softkeys-0.0.1.css">
+
+</head>
+
+<body oncontextmenu="return false">
+
+<div class="page-container">
+	<h1>XCORE 集成</h1>
+	<form id="userForm" method="post">
+		<div>
+			<input type="text" name="username" id="email" placeholder="Username" autocomplete="off"/>
+		</div>
+		<div>
+			<input type="password" name="password" id="password" placeholder="Password" oncontextmenu="return false" onpaste="return false" />
+		</div>
+
+		<button id="login" type="button" onclick="LOGIN.doLogin()">登 录</button>
+	</form>
+	<div class="softkeys" data-target="input[name='password']"></div>
+	<div class="connect">
+		<p>If we can only encounter each other rather than stay with each other,then I wish we had never encountered.</p>
+		<p style="margin-top:20px;">如果只是遇见，不能停留，不如不遇见。</p>
+	</div>
+</div>
+
+<div class="alert" style="display:none">
+	<h2>消息</h2>
+	<div class="alert_con">
+		<p id="ts"></p>
+		<p style="line-height:70px"><a class="btn" href="javascript:void(0)" onclick="LOGIN.is_hide()">确定</a></p>
+	</div>
+</div>
+<script type="text/javascript" src="../framework/jquery/jquery-1.11.0.min.js"></script>
+<script src="js/supersized.3.2.7.min.js"></script>
+<script src="js/supersized-init.js"></script>
+<script src="js/softkeys-0.0.1.js"></script>
+<script type="text/javascript" src="js/login.js"></script>
+</body>
+
+</html>
+

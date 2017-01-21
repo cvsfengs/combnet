@@ -1,0 +1,64 @@
+body {
+    overflow-y: scroll;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
+    background: #f4f4f4;
+    padding: 0;
+    margin: 0;
+}
+h1 {
+    font-size: 31px;
+    line-height: 32px;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+a,
+a:hover {
+    border: none;
+    text-decoration: none;
+}
+img,
+a img {
+    border: none;
+}
+pre {
+    overflow-x: scroll;
+    background: #ffffff;
+    border: 1px solid #cecece;
+    padding: 10px;
+}
+
+.clear { clear: both;  }
+
+.zoomed > .container {
+    -webkit-filter: blur(3px);
+    filter: blur(3px);
+}
+
+.container {
+    width: 505px;
+    margin: 0 auto;
+}
+
+.gallery {
+    float: left;
+    background: #ffffff;
+    padding: 20px 20px 10px 20px;
+    margin: 0;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+.gallery div {
+    float: left;
+    padding: 0 10px 10px 0;
+}
+.gallery div:nth-child(6n) {
+    padding-right: 0;
+}
+.gallery a,
+.gallery img {
+    float: left;
+}

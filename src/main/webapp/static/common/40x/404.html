@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>404页面</title>
+    <script type="text/javascript">
+        var i = 3;
+        var interval = setInterval("fun()", 1000);
+        function fun() {
+            if (i == 0) {
+                history.go(-1);;
+                clearInterval(interval);
+            }
+            document.getElementById("mes").innerHTML = i;
+            i--;
+        }
+    </script>
+    <style type="text/css">
+        body{text-align:center}
+        h1{font-family:"微软雅黑"}
+    </style>
+</head>
+
+<body>
+<p><img src="/xcore/static/common/img/404.gif" width="520" height="320" /></p>
+<h1>抱歉，这个页面已经被外星人绑架了</h1>
+<p><span id="mes">3</span>秒钟后将带您返回地球</p>
+</body>
+</html>

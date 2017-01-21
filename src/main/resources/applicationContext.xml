@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+            http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+       <!--加载配置文件-->
+       <import resource="classpath:springcfg/springmvc.xml"/>
+       <import resource="classpath:springcfg/mybatis.xml"/>
+       <import resource="classpath:springcfg/quartz.xml"/>
+       <import resource="classpath:springcfg/springjdbctemplete.xml"/>
+       <import resource="classpath:springcfg/spring-hessian.xml"/>
+       <import resource="classpath:springcfg/global-properties.xml"/>
+       <import resource="classpath:springcfg/spring-redis.xml"/>
+</beans>

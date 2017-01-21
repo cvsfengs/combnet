@@ -1,0 +1,66 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>站点收藏管理</title>
+    <link rel="stylesheet" type="text/css" href="../framework/jqueryEasyUI/themes/default/easyui.css"/>
+    <link rel="stylesheet" type="text/css" href="../framework/jqueryEasyUI/themes/icon.css"/>
+    <script type="text/javascript" src="../framework/jquery/jquery-1.6.2.js"></script>
+    <script type="text/javascript" src="../framework/jqueryEasyUI/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="../siteCollectManager/js/siteCollectManager.js"></script>
+
+</head>
+<body>
+<div id="siteManager" title="站点收藏管理" style="padding:5px">
+    <div id="tb" style="padding:5px;height:auto">
+        <div style="margin-bottom:5px">
+            <a href="#" class="easyui-linkbutton" iconCls="icon-add" plain="true" onClick="SITECOLLECTMANAGER.layOut.site_open()">新增</a>
+            <a href="#" class="easyui-linkbutton" iconCls="icon-edit" plain="true" onClick="SITECOLLECTMANAGER.layOut.site_detail()">查看详情</a>
+        </div>
+    </div>
+    <table id="siteGrid" class="easyui-datagrid" title="站点收藏管理首页" data-options="pagination:true,pageList: [10,15,30],rownumbers:true,singleSelect:true,collapsible:true,url:'/xcore/siteCollectManager/siteSearch.do',method:'post'">
+        <thead>
+        <tr>
+            <th data-options="field:'collectId',width:80,sortable:true">站点Id</th>
+            <th data-options="field:'content',width:300">站点名称(中文)</th>
+            <th data-options="field:'url',width:300">页面链接</th>
+        </tr>
+        </thead>
+    </table>
+
+</div>
+<div id="addSite" class="easyui-window" title="添加站点收藏" data-options="modal:true,closed:true,iconCls:'icon-save'" style="width:327px;height:350px;padding:10px;">
+    <table cellpadding="5">
+        <input id="type" type="hidden">
+        <input id="pId" type="hidden" value="">
+        <tr>
+            <td>站点名称(中文):</td>
+            <td>
+                <input id="content" class="easyui-textbox" type="text" name="content" data-options="required:true"/>
+            </td>
+        </tr>
+        <tr>
+            <td>是否可用:</td>
+            <td>
+                <select id="isUse" class="easyui-combobox" name="isUse" style="width:200px;">
+                    <option value="1">是</option>
+                    <option value="0">否</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>页面链接:</td>
+            <td>
+                <input id="url" class="easyui-textbox" type="text" name="url" data-options="required:true"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="#" class="easyui-linkbutton" onclick="SITECOLLECTMANAGER.layOut.site_update()">保存</a>
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

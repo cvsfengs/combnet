@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.comb.menuManager.dao.MenuManagerDao">
+
+	<select id="menuSearch" parameterType="com.comb.commons.pojo.EasyUIRequestPagination" resultType="com.comb.menuManager.pojo.MenuPojo">
+		SELECT
+		 	parentmenu.pId as 'pId',
+		 	parentmenu.pName as 'pName',
+		 	parentmenu.link as 'link',
+		 	parentmenu.menuDesc as 'menuDesc'
+		FROM parentmenu WHERE isUse = 1
+		LIMIT #{page},#{rows}
+	</select>
+	<select id="menuCount"  resultType="java.lang.Integer">
+		SELECT
+		COUNT(*)
+		FROM parentmenu WHERE isUse = 1
+	</select>
+
+	<insert id="menuAdd" parameterType="com.comb.menuManager.pojo.MenuPojo">
+		<selectKey resultType="java.lang.Integer" keyProperty="pId" order="AFTER" >
+			SELECT @@IDENTITY
+		</selectKey>
+		insert into parentmenu
+		(pName,isUse,link,menuDesc) VALUES (#{pName},#{isUse},#{link},#{menuDesc})
+	</insert>
+
+	<update id="menuRemove" parameterType="java.lang.Integer" >
+		UPDATE parentmenu
+		SET
+		isUse=0 WHERE pId = #{pId}
+	</update>
+
+	<update id="menuModify" parameterType="com.comb.menuManager.pojo.MenuPojo" >
+		UPDATE parentmenu
+		SET pName=#{pName},isUse=#{isUse},link=#{link},menuDesc=#{menuDesc},isUse=#{isUse}
+		WHERE pId = #{pId}
+	</update>
+
+</mapper>

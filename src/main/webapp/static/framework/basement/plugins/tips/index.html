@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>66种基于animate.css的CSS消息提示效果|DEMO_jQuery之家-自由分享jQuery、html5、css3的插件库</title>
+	<link href='http://fonts.useso.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
+	<link href="css/Icomoon/style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link href="css/animate.css" rel="stylesheet" type="text/css" />
+	<link href="css/animated-notifications.css" rel="stylesheet" type="text/css" />
+	<!--[if IE]>
+		<script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<div class="htmleaf-container">
+		<div id="notifications">
+			<header class="htmleaf-header bgcolor-13">
+				<h1>66种基于animate.css的CSS消息提示效果 <span>66 CSS effects for notifications using animate.css</span></h1>
+				<div class="htmleaf-links">
+					<a class="htmleaf-icon icon-home" href="http://www.htmleaf.com/" title="jQuery之家" target="_blank"><span> jQuery之家</span></a>
+					<a class="htmleaf-icon icon-arrow-right-6" href="http://www.htmleaf.com/css3/css3donghua/201503061470.html" title="返回下载页" target="_blank"><span> 返回下载页</span></a>
+				</div>
+			</header>
+			<div id="notifications-bottom-center"></div>
+			<div id="notifications-bottom-right"></div>
+			<div id="notifications-window">
+			    <div class="notifications-window-row" style="margin-top:85px;">
+			      <select class="dropdown" id="position">
+			        <option value="top">Top</option>
+			        <option value="center">Center</option>
+			        <option value="bottom">Bottom Center</option>
+			        <option value="botom_right">Bottom Right</option>
+			      </select>
+				</div>
+			    <div class="notifications-window-row">
+			      <select class="dropdown" id="effects">
+				       <optgroup label="Attention Seekers">
+				          <option value="bounce">bounce</option>
+				          <option value="flash">flash</option>
+				          <option value="pulse">pulse</option>
+				          <option value="rubberBand">rubberBand</option>
+				          <option value="shake">shake</option>
+				          <option value="swing">swing</option>
+				          <option value="tada">tada</option>
+				          <option value="wobble">wobble</option>
+				        </optgroup>
+
+				        <optgroup label="Bouncing Entrances">
+				          <option value="bounceIn">bounceIn</option>
+				          <option value="bounceInDown">bounceInDown</option>
+				          <option value="bounceInLeft">bounceInLeft</option>
+				          <option value="bounceInRight">bounceInRight</option>
+				          <option value="bounceInUp">bounceInUp</option>
+				        </optgroup>
+
+				        <optgroup label="Bouncing Exits">
+				          <option value="bounceOut">bounceOut</option>
+				          <option value="bounceOutDown">bounceOutDown</option>
+				          <option value="bounceOutLeft">bounceOutLeft</option>
+				          <option value="bounceOutRight">bounceOutRight</option>
+				          <option value="bounceOutUp">bounceOutUp</option>
+				        </optgroup>
+
+				        <optgroup label="Fading Entrances">
+				          <option value="fadeIn">fadeIn</option>
+				          <option value="fadeInDown">fadeInDown</option>
+				          <option value="fadeInDownBig">fadeInDownBig</option>
+				          <option value="fadeInLeft">fadeInLeft</option>
+				          <option value="fadeInLeftBig">fadeInLeftBig</option>
+				          <option value="fadeInRight">fadeInRight</option>
+				          <option value="fadeInRightBig">fadeInRightBig</option>
+				          <option value="fadeInUp">fadeInUp</option>
+				          <option value="fadeInUpBig">fadeInUpBig</option>
+				        </optgroup>
+
+				        <optgroup label="Fading Exits">
+				          <option value="fadeOut">fadeOut</option>
+				          <option value="fadeOutDown">fadeOutDown</option>
+				          <option value="fadeOutDownBig">fadeOutDownBig</option>
+				          <option value="fadeOutLeft">fadeOutLeft</option>
+				          <option value="fadeOutLeftBig">fadeOutLeftBig</option>
+				          <option value="fadeOutRight">fadeOutRight</option>
+				          <option value="fadeOutRightBig">fadeOutRightBig</option>
+				          <option value="fadeOutUp">fadeOutUp</option>
+				          <option value="fadeOutUpBig">fadeOutUpBig</option>
+				        </optgroup>
+
+				        <optgroup label="Flippers">
+				          <option value="flip">flip</option>
+				          <option value="flipInX">flipInX</option>
+				          <option value="flipInY">flipInY</option>
+				          <option value="flipOutX">flipOutX</option>
+				          <option value="flipOutY">flipOutY</option>
+				        </optgroup>
+
+				        <optgroup label="Lightspeed">
+				          <option value="lightSpeedIn">lightSpeedIn</option>
+				          <option value="lightSpeedOut">lightSpeedOut</option>
+				        </optgroup>
+
+				        <optgroup label="Rotating Entrances">
+				          <option value="rotateIn">rotateIn</option>
+				          <option value="rotateInDownLeft">rotateInDownLeft</option>
+				          <option value="rotateInDownRight">rotateInDownRight</option>
+				          <option value="rotateInUpLeft">rotateInUpLeft</option>
+				          <option value="rotateInUpRight">rotateInUpRight</option>
+				        </optgroup>
+
+				        <optgroup label="Rotating Exits">
+				          <option value="rotateOut">rotateOut</option>
+				          <option value="rotateOutDownLeft">rotateOutDownLeft</option>
+				          <option value="rotateOutDownRight">rotateOutDownRight</option>
+				          <option value="rotateOutUpLeft">rotateOutUpLeft</option>
+				          <option value="rotateOutUpRight">rotateOutUpRight</option>
+				        </optgroup>
+
+				        <optgroup label="Specials">
+				          <option value="hinge">hinge</option>
+				          <option value="rollIn">rollIn</option>
+				          <option value="rollOut">rollOut</option>
+				        </optgroup>
+
+				        <optgroup label="Zoom Entrances">
+				          <option value="zoomIn">zoomIn</option>
+				          <option value="zoomInDown">zoomInDown</option>
+				          <option value="zoomInLeft">zoomInLeft</option>
+				          <option value="zoomInRight">zoomInRight</option>
+				          <option value="zoomInUp">zoomInUp</option>
+				        </optgroup>
+
+				        <optgroup label="Zoom Exits">
+				          <option value="zoomOut">zoomOut</option>
+				          <option value="zoomOutDown">zoomOutDown</option>
+				          <option value="zoomOutLeft">zoomOutLeft</option>
+				          <option value="zoomOutRight">zoomOutRight</option>
+				          <option value="zoomOutUp">zoomOutUp</option>
+				        </optgroup>
+			      	</select>
+		      	</div>
+		    	<div class="notifications-window-row" style="margin-top:60px;">
+		      		<div id="notifications-window-row-button">Submit</div>
+		    	</div>
+			</div>
+			<img src="img/nexusae0_wallpaper_51.jpg" id="notifications-background"/>
+		</div>
+		<div class="related">
+		    <h3>如果你喜欢这个插件，那么你可能也喜欢:</h3>
+		    <a href="http://www.htmleaf.com/html5/html5donghua/20141016210.html">
+			  <img src="related/1.jpg" width="300" alt="12种利用html5+css3打造的消息提示框效果"/>
+			  <h3>12种利用html5+css3打造的消息提示框效果</h3>
+			</a>
+			<a href="http://www.htmleaf.com/css3/css3donghua/20141126594.html">
+			  <img src="related/2.jpg" width="300" alt="css3可定时关闭的消息提示框插件"/>
+			  <h3>css3可定时关闭的消息提示框插件</h3>
+			</a>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="js/jquery-2.0.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.10.4.min.js"></script>
+	<script type="text/javascript" src="js/animated-notifications.js"></script>
+</body>
+</html>

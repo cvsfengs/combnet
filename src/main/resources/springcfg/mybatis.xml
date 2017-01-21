@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+       <!--<context:property-placeholder location="classpath:${env}.properties"></context:property-placeholder>-->
+       <!-- dbcp数据源 空闲链接超过8小时自动关闭,人多人都说c3p0的效率能比dbcp高,但我没有真真正正试过-->
+       <!--读库-->
+       <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+              <!--基本配置  驱动、数据库链接、用户名、密码 -->
+              <property name="driverClassName" value="${jdbc.driver}" />
+              <property name="url" value="${jdbc.url}" />
+              <property name="username" value="${jdbc.user}" />
+              <property name="password" value="${jdbc.password}" />
+
+              <!-- 优化配置 初始化连接池大小、最大活跃数、最大空闲数、最小空闲数、连接池最大等待时间、任务最大等待时间-->
+              <property name="initialSize" value="${jdbc.initialSize}"/>
+              <property name="maxActive" value="${jdbc.maxActive}"/>
+              <property name="maxIdle" value="${jdbc.maxIdle}"/>
+              <property name="minIdle" value="${jdbc.minIdle}"/>
+              <property name="timeBetweenEvictionRunsMillis" value="${jdbc.timeBetweenEvictionRunsMillis}"/>
+              <property name="minEvictableIdleTimeMillis" value="${jdbc.minEvictableIdleTimeMillis}"/>
+
+       </bean>
+
+       <!-- 配置事务管理器 -->
+       <bean name="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+              <property name="dataSource" ref="dataSource" />
+       </bean>
+       <!-- 采用注解方式配置事务 -->
+       <tx:annotation-driven transaction-manager="transactionManager"/>
+
+       <!-- 声明式事务
+       <tx:advice id="TxAdvice" transaction-manager="transactionManager">
+           <tx:attributes>
+               <tx:method name="save*" propagation="REQUIRED" isolation="READ_COMMITTED" />
+               <tx:method name="delete*" propagation="REQUIRED" />
+               <tx:method name="querry*" propagation="REQUIRED"/>
+               <tx:method name="find*" propagation="REQUIRED"/>
+               <tx:method name="insert*" propagation="REQUIRED"/>
+           </tx:attributes>
+       </tx:advice>
+       <aop:config>
+              切点表达式,文档中还有好几种
+              <aop:advisor advice-ref="TxAdvice" pointcut-ref="execution(* com.xuser.controller.*.*(..))"/>
+       </aop:config>
+        -->
+       <!-- 配置mybatis SqlSessionFactory-->
+       <bean id="SqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+              <!--加载mybatis配置-->
+              <property name="dataSource" ref="dataSource"></property>
+              <!-- 自动扫描entity目录，省略Configuration.xml里手工配置 -->
+              <property name="mapperLocations" value="classpath*:mapper/*/*.xml" />
+       </bean>
+       <!-- mapper代理方式配置 -->
+       <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer" >
+              <!-- 指定Mybatis定义接口的包名 -->
+              <property name="annotationClass" value="org.springframework.stereotype.Repository"/>
+              <property name="basePackage" value="com.comb" />
+              <property name="sqlSessionFactoryBeanName" value="SqlSessionFactory" />
+       </bean>
+
+</beans>
