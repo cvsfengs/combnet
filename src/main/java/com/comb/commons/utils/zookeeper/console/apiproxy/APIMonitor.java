@@ -7,14 +7,14 @@ import org.apache.zookeeper.Watcher;
 import org.apache.zookeeper.ZooKeeper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Controller;
 
 import java.util.*;
 
 /**
  * Created by ycfeng on 2017/1/19.
  */
-//@Controller
-//@RequestMapping("/apiMonitor")
+@Controller
 public class APIMonitor {
 
    // private ZooKeeper zk = ZooKeeperOperator.getConn().getOriginalZK();

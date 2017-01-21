@@ -2,6 +2,7 @@ package com.comb;
 
 import com.comb.commons.utils.ip.IPUtil;
 import com.comb.commons.utils.result.DefaultViewResult;
+import com.comb.commons.utils.spring.SpringWebUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
@@ -22,19 +23,21 @@ import java.util.Set;
 @Controller
 @RequestMapping("/testFun")
 public class TestFun {
+
     @Autowired
-    @Qualifier(value = "mappingHandlerMapping")
-    private RequestMappingHandlerMapping requestMappingHandlerMapping ;
+    private SpringWebUtil springWebUtil;
 
     @RequestMapping("fun")
     public void testFun(HttpServletRequest request,HttpServletResponse response){
         String test = request.getParameter("test");
-        Map<RequestMappingInfo, HandlerMethod> handlerMethods = requestMappingHandlerMapping.getHandlerMethods();
-        Set<RequestMappingInfo> requestMappingInfos = handlerMethods.keySet();
+        Set<String> urls = springWebUtil.scanProjectUrls();
 
-        for (RequestMappingInfo requestMappingInfo : requestMappingInfos) {
-            System.out.println("key:"+requestMappingInfo+"__"+requestMappingInfo);
-        }
+//        Map<RequestMappingInfo, HandlerMethod> handlerMethods = requestMappingHandlerMapping.getHandlerMethods();
+//        Set<RequestMappingInfo> requestMappingInfos = handlerMethods.keySet();
+//
+//        for (RequestMappingInfo requestMappingInfo : requestMappingInfos) {
+//            System.out.println("key:"+requestMappingInfo+"__"+requestMappingInfo);
+//        }
 
         try {
             response.getWriter().write(test);
