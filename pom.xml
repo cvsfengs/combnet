@@ -46,7 +46,7 @@
     <commons.httpclient.client>3.1</commons.httpclient.client>
     <!--tomcat 路径-->
     <tomcat.home>D:\dev\tomcat\apache-tomcat-7.0.67</tomcat.home>
-    <commons.io.version>2.2</commons.io.version>
+    <commons.io.version>2.4</commons.io.version>
     <commons.lang3.version>3.3.2</commons.lang3.version>
     <commons.lang.version>2.5</commons.lang.version>
     <commons.logging.version>1.1.1</commons.logging.version>
@@ -64,6 +64,7 @@
     <!-- jstl需要的jar包 -->
     <servlet.jstl>1.2</servlet.jstl>
     <servlet.api>2.5</servlet.api>
+    <org.bouncycastle.bcprov-jdk15on>1.47</org.bouncycastle.bcprov-jdk15on>
     <!-- 文件上传需要的jar包 -->
     <commons.fileupload>1.2.1</commons.fileupload>
     <commons.io>1.4</commons.io>
@@ -97,7 +98,11 @@
       <artifactId>junit</artifactId>
       <version>3.8.1</version>
     </dependency>
-
+    <!--<dependency>-->
+      <!--<groupId>org.bouncycastle</groupId>-->
+      <!--<artifactId>bcprov-jdk15on</artifactId>-->
+      <!--<version>${org.bouncycastle.bcprov-jdk15on}</version>-->
+    <!--</dependency>-->
     <dependency>
       <groupId>com.google.code.gson</groupId>
       <artifactId>gson</artifactId>

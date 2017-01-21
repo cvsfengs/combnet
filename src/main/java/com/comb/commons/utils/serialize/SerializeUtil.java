@@ -72,18 +72,4 @@ public class SerializeUtil<T> implements Serializable {
         return null;
     }
 
-    public static void main(String[] args) {
-        Language language = new Language();
-            language.setcName("helloworld");
-            language.setIsUse(1);
-        byte[] serialize = SerializeUtil.serialize(language);
-        Language language1 = SerializeUtil.unSerialize(serialize, Language.class);
-        System.out.println(language1.getcName());
-
-    }
-
-
-
-
-
 }

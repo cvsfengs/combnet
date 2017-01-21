@@ -31,7 +31,6 @@ public class AbstractZooKeeper implements Watcher {
      */
     @Override
     public void process(WatchedEvent event) {
-        // TODO Auto-generated method stub
         if(event.getState()==KeeperState.SyncConnected){
             countDownLatch.countDown();
         }

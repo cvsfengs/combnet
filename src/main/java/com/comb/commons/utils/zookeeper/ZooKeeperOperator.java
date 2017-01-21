@@ -53,9 +53,7 @@ public class ZooKeeperOperator extends AbstractZooKeeper{
                 }
             }
         }catch (KeeperException.NoNodeException e) {
-            // TODO: handle exception
             throw e;
-
         }
     }
 
