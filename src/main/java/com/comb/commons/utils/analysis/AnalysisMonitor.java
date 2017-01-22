@@ -7,6 +7,7 @@ import java.util.TimerTask;
 /**
  * Created by Administrator on 2016/9/20.
  */
+@Deprecated
 public class AnalysisMonitor extends TimerTask {
 
     private boolean exit  = false ;
