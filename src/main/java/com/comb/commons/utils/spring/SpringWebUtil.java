@@ -46,7 +46,7 @@ public class SpringWebUtil{
         if (map != null && map.size() > 0) {
             Set<RequestMappingInfo> requestMappingInfos = map.keySet();
             for (RequestMappingInfo info : requestMappingInfos) {
-                /**todo bean全类名定义*/
+                /**bean全类名定义*/
                 HandlerMethod handlerMethod = map.get(info);
                 String beanName = handlerMethod.getBeanType().getName();
                 Set<String> values = rs.get(beanName);
@@ -70,7 +70,7 @@ public class SpringWebUtil{
         if (map != null && map.size() > 0) {
             Set<RequestMappingInfo> requestMappingInfos = map.keySet();
             for (RequestMappingInfo info : requestMappingInfos) {
-                /**todo bean全类名定义*/
+                /**bean全类名定义*/
                 HandlerMethod handlerMethod = map.get(info);
                 String url = info.getPatternsCondition().getPatterns().toArray()[0].toString();
                 if (!StringUtils.isBlank(url)) {
