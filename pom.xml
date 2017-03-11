@@ -560,4 +560,17 @@
     </plugins>
 
   </build>
+  <distributionManagement>
+    <repository>
+      <id>nexus-releases</id>
+      <name>project release repository</name>
+      <url>http://nexus.fyc.com:8081/nexus/content/repositories/releases</url>
+    </repository>
+    <snapshotRepository>
+      <id>nexus-snapshots</id>
+      <name>project snapshot repository</name>
+      <url>http://nexus.fyc.com:8081/nexus/content/repositories/snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
+
 </project>
