@@ -17,9 +17,8 @@ public class DynamicProxyHandler implements InvocationHandler {
     private Object proxy  ;//代理对象
     private Object target ;//目标对象
     private static Logger logger = LoggerFactory.getLogger(DynamicProxyHandler.class);
+    //如果采用TreeMap 则需要实现Compareable 接口
     private static HashMap<Class<?>, DynamicProxyHandler> route = new HashMap<Class<?>, DynamicProxyHandler>();
-    //private static HashMap<Class<?>, DynamicProxyHandler> route = new HashMap<Class<?>, DynamicProxyHandler>();todo 这里会报错
-
     public static <T> T getInstance(Class<T> cls){
         DynamicProxyHandler handler = route.get(cls);
         if(handler==null){
