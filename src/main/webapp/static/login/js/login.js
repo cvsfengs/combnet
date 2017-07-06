@@ -3,8 +3,8 @@
  */
 var LOGIN = {
     requestURL:{
-        login:"/xcore/user/login.do" ,
-        locationHref:"/xcore/static/common/index.html"
+        login:"/user/login.do" ,
+        locationHref:"/static/common/index.html"
     },
     is_hide:function(){
         $(".alert").animate({"top":"-40%"}, 300);
