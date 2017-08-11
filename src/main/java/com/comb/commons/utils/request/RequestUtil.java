@@ -91,5 +91,13 @@ public class RequestUtil {
         }
         return resultMap ;
     };
+    /**
+    * 获取当前请求url
+    */
+    public static HttpServletRequest getCurrentReq(){
+        ServletRequestAttributes ra= (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
+        HttpServletRequest request =  ra.getRequest();
+        return request;
+    }
 
 }
