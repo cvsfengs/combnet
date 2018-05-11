@@ -18,7 +18,6 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by ycfeng on 2016/9/2.
  * 文件上传
  */
 @Controller

@@ -9,7 +9,6 @@ import org.apache.commons.codec.digest.DigestUtils;
 import java.io.UnsupportedEncodingException;
 
 /**
- * Created by ycfeng on 2016/9/23.
  * 翻译工具类
  */
 public class TranslateUtil {

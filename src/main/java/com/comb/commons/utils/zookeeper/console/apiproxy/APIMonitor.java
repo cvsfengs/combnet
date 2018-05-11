@@ -12,13 +12,12 @@ import org.springframework.stereotype.Controller;
 import java.util.*;
 
 /**
- * Created by ycfeng on 2017/1/19.
  */
 @Controller
 public class APIMonitor {
 
    // private ZooKeeper zk = ZooKeeperOperator.getConn().getOriginalZK();
-    private final String base_path = "/uc/apiNew/apis" ;
+    private final String base_path = "/u/aw/ais" ;
     private int i = 0 ;
     private int MAX_TRY = 10 ;//最大失败尝试次数
     private List<APIServerNode> apiServer = new ArrayList<APIServerNode>();

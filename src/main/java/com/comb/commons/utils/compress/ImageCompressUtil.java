@@ -16,7 +16,6 @@
 //import net.coobird.thumbnailator.name.Rename;
 //
 ///**
-// * Created by ycfeng on 2016/10/9.
 // */
 //public class ImageCompressUtil {
 //    /**

@@ -1,7 +1,6 @@
 package com.comb.commons.utils.excel.cst;
 
 /**
- * Created by ycfeng on 2016/9/1.
  * excel 常量存储
  */
 public class ExcelCST {

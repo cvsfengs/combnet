@@ -13,7 +13,6 @@ import java.util.Date;
 import java.util.Properties;
 
 /**
- * Created by ycfeng on 2016/7/27
  * 邮件工具类.
  */
 public class MailUtil implements MarkInterface {

@@ -15,7 +15,6 @@ import java.net.SocketException;
 import java.util.Properties;
 
 /**
- * Created by ycfeng on 2017/2/16.
  */
 public class FTPUtil {
 

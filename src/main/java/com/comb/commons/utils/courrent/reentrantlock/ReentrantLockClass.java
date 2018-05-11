@@ -3,7 +3,6 @@ package com.comb.commons.utils.courrent.reentrantlock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * Created by yc.feng on 2016/9/10.
  */
 public class ReentrantLockClass implements Runnable{
     public static Integer atomic = 0;

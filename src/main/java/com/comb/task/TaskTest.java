@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /**
- * Created by ycfeng on 2016/8/10.
  */
 @Component
 public class TaskTest {

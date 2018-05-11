@@ -8,7 +8,6 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Created by ycfeng on 2016/9/1.
  */
 public interface OriginalExcel <T>{
     /**

@@ -3,8 +3,6 @@ package com.comb.commons.utils.timmer.waper;
 import com.comb.commons.utils.timmer.pojo.TimePojo;
 
 /**
- * Created by ycfeng on 2016/8/10.
- * log时间包装类
  */
 public interface LogTimer {
 

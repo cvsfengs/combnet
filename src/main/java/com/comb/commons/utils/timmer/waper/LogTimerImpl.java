@@ -6,7 +6,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by ycfeng on 2016/8/10.
  */
 public class LogTimerImpl implements LogTimer{
 

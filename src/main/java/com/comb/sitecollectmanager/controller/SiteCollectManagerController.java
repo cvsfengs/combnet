@@ -13,7 +13,6 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 /**
- * Created by ycfeng on 2016/9/28.
  */
 @Controller
 @RequestMapping("/siteCollectManager")

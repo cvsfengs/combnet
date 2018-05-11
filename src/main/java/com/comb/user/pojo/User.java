@@ -4,7 +4,6 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * Created by ycfeng on 2016/7/29.
  * 用户模块接口
  */
 

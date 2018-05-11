@@ -1,8 +1,6 @@
 package com.comb.commons.utils.timetools;
 
-/**
- * Created by ycfeng on 2016/10/25.
- */
+
 
 import com.comb.commons.utils.number.NumberUtil;
 import com.comb.commons.utils.stringtool.StringTools;
@@ -13,10 +11,7 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
-/**
- * Created by guoqiang on 2015/06/02.
- * 时间工具类
- */
+
 public final class TimeTools {
     private static final long MI_OF_HOUR = 60 * 60 * 1000;//1小时毫秒数
     private static final String YYYY_MM_DD = "yyyy-MM-dd";

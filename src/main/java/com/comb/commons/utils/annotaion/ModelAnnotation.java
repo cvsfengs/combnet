@@ -6,7 +6,6 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 /**
- * Created by ycfeng on 2016/7/29.
  * 模型注解
  */
 @Target({ElementType.FIELD, ElementType.METHOD,ElementType.TYPE, ElementType.PARAMETER})

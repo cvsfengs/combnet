@@ -5,7 +5,6 @@ import com.comb.sitecollectmanager.pojo.SiteCollect;
 import java.util.List;
 
 /**
- * Created by ycfeng on 2016/9/28.
  */
 public interface SiteCollectManagerService
 {

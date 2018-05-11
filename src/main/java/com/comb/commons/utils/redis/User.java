@@ -3,7 +3,6 @@ package com.comb.commons.utils.redis;
 import java.io.Serializable;
 
 /**
- * Created by ycfeng on 2016/11/4.
  */
 public class User implements Serializable {
 

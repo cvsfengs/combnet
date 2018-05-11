@@ -26,7 +26,6 @@ import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel;
 import org.apache.commons.lang.CharEncoding;
 
 /**
- * Created by ycfeng on 2016/7/27.
  * 二维码工具类
  */
 public class XCodeUtil implements MarkInterface {

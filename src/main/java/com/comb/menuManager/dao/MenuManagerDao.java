@@ -7,7 +7,6 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 /**
- * Created by ycfeng on 2016/8/16.
  * 菜单管理dao
  */
 @Repository

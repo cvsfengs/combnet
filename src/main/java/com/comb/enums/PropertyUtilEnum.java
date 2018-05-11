@@ -1,7 +1,6 @@
 package com.comb.enums;
 
 /**
- * Created by ycfeng on 2016/7/28.
  */
 public enum PropertyUtilEnum {
 

@@ -8,7 +8,6 @@ import java.util.Properties;
 import java.util.Set;
 
 /**
- * Created by cvsFeng on 2016/7/27.
  * 属性工具类
  */
 public class PropertyUtil implements MarkInterface {

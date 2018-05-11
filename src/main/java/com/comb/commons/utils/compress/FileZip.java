@@ -7,7 +7,6 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipOutputStream;
 
 /**
- * Created by ycfeng on 2016/11/7.
  */
 public class FileZip {
 

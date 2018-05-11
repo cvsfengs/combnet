@@ -6,7 +6,6 @@ import com.comb.commons.utils.supermap.SuperMap;
 import java.util.*;
 
 /**
- * Created by guoqiang on 2015/06/02.
  */
 public final class CollectionsTools {
 

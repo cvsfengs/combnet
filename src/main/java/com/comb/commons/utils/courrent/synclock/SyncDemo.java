@@ -1,7 +1,6 @@
 package com.comb.commons.utils.courrent.synclock;
 
 /**
- * Created by yc.feng on 2016/9/9.
  *
  */
 public class SyncDemo {

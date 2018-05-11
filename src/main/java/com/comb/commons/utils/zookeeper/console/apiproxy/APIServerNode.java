@@ -3,8 +3,7 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * Created by ycfeng on 2017/1/19.
- */
+= */
 public class APIServerNode implements Serializable {
 
     /**

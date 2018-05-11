@@ -3,7 +3,6 @@ package com.comb.commons.utils.excel.pojo;
 import com.comb.commons.utils.excel.cst.ExcelCST;
 
 /**
- * Created by ycfeng on 2016/9/1.
  * 节点信息相关类
  */
 public class Nodes {

@@ -3,7 +3,6 @@ package com.comb.commons.utils.excel.pojo;
 import java.util.Date;
 
 /**
- * Created by ycfeng on 2016/9/2.
  * excel临时demo尽量考虑到所有的数据类型
  */
 public class ExcelSheetDemoPojo {

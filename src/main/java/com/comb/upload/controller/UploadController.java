@@ -16,7 +16,6 @@ package com.comb.upload.controller;
         import java.util.Set;
 
 /**
- * Created by ycfeng on 2016/9/26.
  */
 @Controller
 @RequestMapping("/upload")

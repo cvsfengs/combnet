@@ -17,8 +17,8 @@ public class DownFile {
         String ftpPassword = PropertyUtil.getValueByKey("ftpPassword");
         SFTPUtils sftpUtils = new SFTPUtils();
         ChannelSftp channelsftp = sftpUtils.connect(ftpIp,Integer.parseInt(ftpPort),ftpUserName,ftpPassword);
-        String outFile = "E:\\uccrm_log";
-        sftpUtils.download("/usr/local/LogServ/ucar/test/uccrm/uccrm01-10.104.90.194", "uccrm_log",outFile,channelsftp);
+        String outFile = "E:log";
+        sftpUtils.download("/usr/local/", "",outFile,channelsftp);
 
     }
 }

@@ -1,11 +1,10 @@
 package com.comb.commons.utils.excel.demo;
 
 import com.comb.commons.utils.excel.container.ExcelContainer;
-import com.comb.commons.utils.excel.pojo.ShenZhouCRMExcelDemo;
+import com.comb.commons.utils.excel.pojo.SZhouExcelDemo;
 import org.apache.poi.ss.usermodel.Row;
 
 /**
- * Created by ycfeng on 2016/9/2.
  */
 public class ExcelContainerImpl extends ExcelContainer {
     @Override
@@ -22,7 +21,7 @@ public class ExcelContainerImpl extends ExcelContainer {
 //        Cell cell2 = row.getCell(2);
 //        Boolean simpleBoolean = cell2.getBooleanCellValue();
 //        excelSheetDemoPojo.setSimpleBoolean(simpleBoolean);
-        ShenZhouCRMExcelDemo crm = new ShenZhouCRMExcelDemo();
+        SZhouExcelDemo crm = new SZhouExcelDemo();
         crm.setMemberCode(row.getCell(0).getStringCellValue());
         crm.setMemberName(row.getCell(1).getStringCellValue());
         //crm.setMemberMobile(row.getCell(2).getStringCellValue());

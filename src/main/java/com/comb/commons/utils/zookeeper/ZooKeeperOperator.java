@@ -9,7 +9,6 @@ import org.apache.zookeeper.KeeperException;
 import org.apache.zookeeper.ZooDefs.Ids;
 
 /**
- * Created by ycfeng on 2016/8/8.
  */
 public class ZooKeeperOperator extends AbstractZooKeeper{
 
@@ -64,7 +63,7 @@ public class ZooKeeperOperator extends AbstractZooKeeper{
     public static void main(String[] args) {
         try {
             ZooKeeperOperator zkoperator = new ZooKeeperOperator();
-            zkoperator.connect("10.104.90.238:5181");
+            zkoperator.connect("123490234181");
 
             byte[] data = new byte[]{'a','b','c','d'};
 

@@ -3,7 +3,6 @@ package com.comb.commons.utils.translate;
 import com.comb.commons.utils.translate.language.Language;
 
 /**
- * Created by ycfeng on 2016/9/23.
  */
 public class Main {
 

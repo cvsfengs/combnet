@@ -5,7 +5,6 @@ import com.comb.language.pojo.Language;
 import java.io.*;
 
 /**
- * Created by ycfeng on 2016/11/9.
  */
 public class SerializeUtil<T> implements Serializable {
 

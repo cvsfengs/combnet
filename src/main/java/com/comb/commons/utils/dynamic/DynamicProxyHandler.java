@@ -9,7 +9,6 @@ import java.lang.reflect.Proxy;
 import java.util.HashMap;
 
 /**
- * Created by ycfeng on 2017/2/24.
  * 动态代理调用对象
  */
 public class DynamicProxyHandler implements InvocationHandler {

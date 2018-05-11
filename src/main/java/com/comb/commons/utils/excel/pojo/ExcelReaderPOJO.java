@@ -5,7 +5,6 @@ import com.comb.commons.utils.excel.cst.ExcelCST;
 import java.io.File;
 
 /**
- * Created by ycfeng on 2016/9/1.
  * excel 读
  */
 public class ExcelReaderPOJO implements ExcelPOJO {

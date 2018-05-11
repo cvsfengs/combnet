@@ -6,7 +6,6 @@ import org.python.core.PyObject;
 import org.python.util.PythonInterpreter;
 
 /**
- * Created by ycfeng on 2016/10/25.
  */
 public class JythonUtil {
 

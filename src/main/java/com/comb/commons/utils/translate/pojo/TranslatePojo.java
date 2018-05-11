@@ -3,7 +3,6 @@ package com.comb.commons.utils.translate.pojo;
 import java.util.List;
 
 /**
- * Created by ycfeng on 2016/9/23.
  * 调用百度api翻译接口回参对象
  */
 public class TranslatePojo {

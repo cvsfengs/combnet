@@ -9,9 +9,9 @@ public class Main
 {
     public static void main(String[] args) {
         //
-        String in = "E:\\uccrm_log";
-        String out = "E:\\uccrm_log.txt";
-        String keyWord = "远程开始调用获取客户意向接口" ;
+        String in = "E:\\urm_log";
+        String out = "E:\\.txt";
+        String keyWord = "远程口" ;
         AnalysisFile analysisFile = new AnalysisFile();
         File inFile = new File(in);
         File outFile = new File(out);

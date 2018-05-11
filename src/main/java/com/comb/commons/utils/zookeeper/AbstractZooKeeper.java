@@ -11,7 +11,6 @@ import org.apache.zookeeper.ZooKeeper;
 import org.apache.zookeeper.Watcher.Event.KeeperState;
 
 /**
- * Created by ycfeng on 2016/8/8.
  */
 public class AbstractZooKeeper implements Watcher {
     private static Log log = LogFactory.getLog(AbstractZooKeeper.class.getName());

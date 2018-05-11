@@ -4,7 +4,6 @@ import com.comb.commons.utils.dynamic.inter.Idemo;
 import com.comb.commons.utils.dynamic.inter.impl.DemoImpl;
 
 /**
- * Created by ycfeng on 2017/2/24.
  */
 public class Main {
 

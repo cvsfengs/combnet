@@ -1,7 +1,6 @@
 package com.comb.language.pojo;
 
 /**
- * Created by yc.feng on 2016/9/23.
  */
 public class Language {
     /**

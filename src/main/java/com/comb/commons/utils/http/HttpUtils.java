@@ -11,7 +11,6 @@ import java.io.InputStreamReader;
 import java.net.URI;
 
 /**
- * Created by ycfeng on 2016/9/23.
  * http 操作类
  */
 public class HttpUtils {

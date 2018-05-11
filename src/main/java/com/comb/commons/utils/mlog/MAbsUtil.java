@@ -4,7 +4,6 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 
 /**
- * Created by ycfeng on 2016/9/7.
  */
 public class MAbsUtil {
     /**

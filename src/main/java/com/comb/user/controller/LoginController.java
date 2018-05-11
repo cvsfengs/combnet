@@ -17,7 +17,6 @@ import java.io.IOException;
 
 
 /**
- * Created by ycfeng on 2016/7/29.
  */
 @Controller
 @RequestMapping("/user")
@@ -35,7 +34,7 @@ public class LoginController {
             resultObject.setMsg(ResultEnum.SUCCESS.getMsg());
             resultObject.setStatus(ResultEnum.SUCCESS.getStatus());
             try {
-                response.sendRedirect("http://192.168.1.103:8080/xcore/static/common/index.html");
+                response.sendRedirect("http://16.103:8080/xcore/static/common/index.html");
             } catch (IOException e) {
                 e.printStackTrace();
             }

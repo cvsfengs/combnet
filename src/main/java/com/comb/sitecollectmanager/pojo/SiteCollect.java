@@ -1,7 +1,6 @@
 package com.comb.sitecollectmanager.pojo;
 
 /**
- * Created by ycfeng on 2016/9/28.
  */
 public class SiteCollect {
     /**

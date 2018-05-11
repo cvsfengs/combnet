@@ -2,7 +2,6 @@ package com.comb.commons.utils.memory;
 
 import java.io.File;
 /**
- * Created by ycfeng on 2017/2/17.
  */
 public class SizeOfObjectTest {
     /**

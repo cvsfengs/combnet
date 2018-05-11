@@ -1,7 +1,6 @@
 package com.comb.commons.dynamic.enums;
 
 /**
- * Created by ycfeng on 2016/8/3.
  */
 public enum  DataSourceEunm {
    R("读库","dataSourceR"),W("写库","dataSourceW");

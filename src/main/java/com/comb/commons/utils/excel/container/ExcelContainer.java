@@ -12,7 +12,6 @@ import java.util.Map;
 import java.util.UUID;
 
 /**
- * Created by ycfeng on 2016/9/1.
  */
 public abstract class ExcelContainer<T> extends BasicExcel implements OriginalExcel<T>{
     public  BasicCapabilityInfo info = new BasicCapabilityInfo();

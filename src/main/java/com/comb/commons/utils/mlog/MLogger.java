@@ -2,7 +2,6 @@ package com.comb.commons.utils.mlog;
 import org.apache.commons.lang.BooleanUtils;
 
 /**
- * Created by ycfeng on 2016/9/6.
  * mapi log 工具类:负责封装信息
  */
 public class MLogger extends MTime{

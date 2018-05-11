@@ -6,7 +6,6 @@ import java.lang.reflect.Method;
 import java.util.*;
 
 /**
- * Created by ycfeng on 2016/7/29.
  */
 public class RequestUtil {
     private static ThreadLocal<HttpServletRequest> request = new ThreadLocal<HttpServletRequest>();

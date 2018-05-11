@@ -5,7 +5,6 @@ import java.lang.management.ThreadInfo;
 import java.lang.management.ThreadMXBean;
 
 /**
- * Created by cvsFeng on 2016/9/12.
  */
 public class DeadLockCheckUtil implements Runnable{
     private DeadLockCheckUtil(){};

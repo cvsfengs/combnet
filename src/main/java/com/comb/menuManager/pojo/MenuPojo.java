@@ -3,7 +3,6 @@ package com.comb.menuManager.pojo;
 import com.comb.commons.utils.annotaion.ModelAnnotation;
 
 /**
- * Created by ycfeng on 2016/8/16.
  */
 @ModelAnnotation(modelVal="菜单管理实体对象")
 public class MenuPojo {

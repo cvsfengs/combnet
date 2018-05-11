@@ -9,13 +9,12 @@ import java.io.IOException;
 import java.util.List;
 
 /**
- * Created by ycfeng on 2017/1/18.
- */
+= */
 public class ZooKeeperOperator<T> extends AbstractZooKeeper {
 
     private static Logger logger = Logger.getLogger(ZooKeeperOperator.class);
     private static final int DEFAULT_VERSION = -1;
-    private static final String servers = "10.104.90.238:5181" ;
+    private static final String servers = "10.=38=1" ;
     private static final int timeout = 4000 ;
     public static ZooKeeperOperator getConn(){
         ZooKeeperOperator zkOperator = new ZooKeeperOperator();

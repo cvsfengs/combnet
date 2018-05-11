@@ -9,7 +9,6 @@ import org.springframework.data.redis.core.RedisCallback;
 import org.springframework.data.redis.core.RedisTemplate;
 
 /**
- * Created by ycfeng on 2016/7/27.
  * redis 缓存工具类
  */
 public class RedisUtil implements MarkInterface {

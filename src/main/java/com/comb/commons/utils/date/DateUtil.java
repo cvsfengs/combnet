@@ -9,7 +9,6 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 
 /**
- * Created by ycfeng on 2016/9/23.
  */
 public class DateUtil {
     protected static Log logger = LogFactory.getLog(DateUtil.class);

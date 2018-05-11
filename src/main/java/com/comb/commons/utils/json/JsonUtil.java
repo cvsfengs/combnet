@@ -6,7 +6,6 @@ import com.comb.commons.utils.MarkInterface;
 import java.util.List;
 
 /**
- * Created by ycfeng on 2016/7/27.
  * json转换工具类
  */
 public class JsonUtil implements MarkInterface {

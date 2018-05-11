@@ -13,7 +13,6 @@ import com.jcraft.jsch.JSch;
 import com.jcraft.jsch.Session;
 import com.jcraft.jsch.SftpException;
 /**
- * Created by ycfeng on 2016/9/19.
  */
 public class SFTPUtils {
 

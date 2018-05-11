@@ -1,7 +1,6 @@
 package com.comb.commons.utils.stringtool;
 
 /**
- * Created by ycfeng on 2016/10/25.
  */
 
 import com.alibaba.fastjson.JSON;
@@ -17,11 +16,9 @@ import java.util.Date;
 import java.util.LinkedList;
 import java.util.List;
 
-/**
- * Created by guoqiang on 2015/6/29.
- */
+
 public final class StringTools {
-    private static final String CURRENT_PROJECT_PACKAGE_NAME = "com.uc.";
+    private static final String CURRENT_PROJECT_PACKAGE_NAME = "comc.";
 
     public static List<String> split(String src, String... splits) {
         List<String> list = new ArrayList<String>();

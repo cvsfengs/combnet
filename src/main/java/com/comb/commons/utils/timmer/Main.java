@@ -4,7 +4,6 @@ import com.comb.commons.utils.timmer.pojo.TimePojo;
 import com.comb.commons.utils.timmer.waper.LogTimerImpl;
 
 /**
- * Created by ycfeng on 2016/8/10.
  */
 public class Main {
 

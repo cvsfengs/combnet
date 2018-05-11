@@ -5,7 +5,6 @@ import java.io.InputStream;
 import java.util.Properties;
 
 /**
- * Created by ycfeng on 2016/9/5.
  * 获取当前环境properties 配置文件属性
  */
 public class CurrentEvnProperties {

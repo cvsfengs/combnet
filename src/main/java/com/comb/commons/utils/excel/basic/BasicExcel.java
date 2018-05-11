@@ -12,7 +12,6 @@ import java.io.*;
 import java.util.*;
 
 /**
- * Created by ycfeng on 2016/9/1.
  * 获取一些excel常用源
  */
 public abstract class BasicExcel<T> {

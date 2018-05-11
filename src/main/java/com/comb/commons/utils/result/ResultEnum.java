@@ -1,7 +1,6 @@
 package com.comb.commons.utils.result;
 
 /**
- * Created by ycfeng on 2016/8/2.
  * 返回结果集枚举
  */
 public enum ResultEnum {

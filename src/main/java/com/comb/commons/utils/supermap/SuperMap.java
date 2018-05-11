@@ -10,7 +10,6 @@ import java.io.Serializable;
 import java.util.*;
 
 /**
- * Created by guoqiang on 2016/1/7.
  */
 public class SuperMap<K, V> implements Map<K, V>, Serializable {
 

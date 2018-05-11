@@ -4,7 +4,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * Created by ycfeng on 2016/9/6.
  */
 public class MLogUtil {
 

@@ -4,7 +4,6 @@ import java.util.Map;
 import java.util.UUID;
 
 /**
- * Created by ycfeng on 2016/9/6.
  * 在进行方法执行时,是否记录执行时间
  */
 public class MTime {

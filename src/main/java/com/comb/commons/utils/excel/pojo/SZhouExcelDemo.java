@@ -3,7 +3,7 @@ package com.comb.commons.utils.excel.pojo;
 /**
  * Created by ycfeng on 2016/9/6.
  */
-public class ShenZhouCRMExcelDemo {
+public class SZhouExcelDemo {
     /**
      * 客户编码
      */

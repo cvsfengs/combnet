@@ -3,8 +3,7 @@ package com.comb.commons.utils.zookeeper.console.apiproxy;
 import java.io.Serializable;
 
 /**
- * Created by ycfeng on 2017/1/19.
- */
+= */
 public class ServerApi implements Serializable, Comparable<ServerApi> {
 
     private String apiName;

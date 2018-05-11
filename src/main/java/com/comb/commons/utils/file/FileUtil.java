@@ -11,7 +11,6 @@ import java.io.*;
 import java.util.*;
 
 /**
- * Created by ycfeng on 2016/8/29.
  * 文件操作工具类
  */
 public class FileUtil {

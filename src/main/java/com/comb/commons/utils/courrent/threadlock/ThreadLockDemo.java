@@ -1,7 +1,6 @@
 package com.comb.commons.utils.courrent.threadlock;
 
 /**
- * Created by yc.feng on 2016/9/9.
  * java 并发测试类
  * 线程锁等待
  * 线程1 启动,sleep 为了保证 线程1 真的进入suspend

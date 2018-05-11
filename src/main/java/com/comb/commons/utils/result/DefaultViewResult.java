@@ -7,7 +7,6 @@ import org.apache.log4j.Logger;
 
 /**
  *<p>Description:默认返回方式</p> 
- * @author ycfeng
  * @2016-4-13下午4:23:47
  *
  */

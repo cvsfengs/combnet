@@ -11,7 +11,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * Created by ycfeng on 2017/1/18.
  */
 public class APIRegister /*extends MAPIServer*/{
     private static final String cid ="800701";//todo 此节点需要提前申请 version control

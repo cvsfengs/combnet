@@ -12,7 +12,6 @@ import java.net.URLEncoder;
 import java.security.MessageDigest;
 
 /**
- * Created by ycfeng on 2016/12/28.
  */
 public class EncryptUtil {
 

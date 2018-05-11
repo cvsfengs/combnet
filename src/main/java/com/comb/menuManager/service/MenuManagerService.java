@@ -11,7 +11,6 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 /**
- * Created by ycfeng on 2016/8/16.
  * 菜单管理service层
  */
 @Service

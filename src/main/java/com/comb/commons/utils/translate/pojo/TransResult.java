@@ -1,7 +1,6 @@
 package com.comb.commons.utils.translate.pojo;
 
 /**
- * Created by ycfeng on 2016/9/23.
  */
 public class TransResult {
     /**
