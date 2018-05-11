@@ -8,7 +8,7 @@ import ucmapi.generator.code.pojo.ClazzInfo;
 import java.io.*;
 
 /**
- * Created by ycfeng on 2016/8/30.
+ * Created by on 2016/8/30.
  */
 public class SimpleGeneratorCode extends GeneratorFile{
     /**
