@@ -13,9 +13,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
 
-/**
- * Created by ycfeng on 2017/1/20.
- */
+
 @Controller
 @RequestMapping("/apiProxy")
 public class ApiProxyController {
