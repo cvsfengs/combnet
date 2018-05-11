@@ -7,7 +7,7 @@ import org.apache.commons.lang.SystemUtils;
  */
 public class WikiGeneratorCst {
 
-    public static String USERNAME = "yc.feng01@zuche.com" ;
+    public static String USERNAME = "" ;
 
     public static Integer API_VERSION = 236 ;
 
@@ -21,9 +21,9 @@ public class WikiGeneratorCst {
      */
     public static String outPutSrc = SystemUtils.getUserDir().getPath()+"\\src\\test\\resources\\tempWiki.log"; ;
 
-    public static String javasrc = SystemUtils.getUserDir().getPath()+"\\src\\test\\java\\ucmapi\\generator\\code\\pojo\\BookOrderFilterParam.java";
+    public static String javasrc = SystemUtils.getUserDir().getPath()+"\\src\\test\\java\\\\generator\\code\\pojo\\BookOrderFilterParam.java";
 
-    public static String javasrcS = SystemUtils.getUserDir().getPath()+"\\src\\test\\java\\ucmapi\\generator\\code\\pojo\\BookOrderFilterParam.java";
+    public static String javasrcS = SystemUtils.getUserDir().getPath()+"\\src\\test\\java\\\\generator\\code\\pojo\\BookOrderFilterParam.java";
     /**
      * 下一行
      */
