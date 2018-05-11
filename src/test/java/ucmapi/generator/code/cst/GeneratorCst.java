@@ -20,7 +20,7 @@ public class GeneratorCst {
     /**
      * 默认包路径
      */
-    public static String DEFAULT_PACKAGE_NAME = "com.uc.mapi.fcar.adapters;";
+    public static String DEFAULT_PACKAGE_NAME = "com.uc.adapters;";
 
     public static String DEFAULT_PREFFIX = "\\src\\main\\java\\";
     /**
@@ -30,15 +30,12 @@ public class GeneratorCst {
     /**
      * 默认导入包
      */
-    public static String DEFAULT_COMMONABSTRACTADAPTER = "com.uc.mapi.adapter.CommonAbstractAdapter;\n";
-    public static String DEFAULT_INANN = "com.uc.mapi.intercepts.base.InAnn;\n";
-    public static String DEFAULT_SANFROIDCHECKLOGIN = "com.uc.mapi.intercepts.sandroid.SAndroidCheckLoginIntercept;\n";
-    public static String DEFAULT_VERSIONCHECK = "com.uc.mapi.intercepts.sandroid.VersionIntercept;\n";
-    public static String DEFAULT_RESULT = "com.uc.ucBase.common.resultUtil.ResultObject;\n";
-    public static String DEFAULT_REQUESTCONTEXT = "com.zuche.baseModules.openAPI.core.context.RequestContext;\n";
+    public static String DEFAULT_COMMONABSTRACTADAPTER = "com.uc.adapter.CommonAbstractAdapter;\n";
+    public static String DEFAULT_INANN = "com.uc.mapi.intercepts.InAnn;\n";
+    public static String DEFAULT_SANFROIDCHECKLOGIN = "com.intercepts.sandroid.SAndroidCheckLoginIntercept;\n";
+    public static String DEFAULT_VERSIONCHECK = "com.intercepts.sandroid.VersionIntercept;\n";
+    public static String DEFAULT_RESULT = "com.common.resultUtil.ResultObject;\n";
     public static String DEFAULT_LOGGER = "org.slf4j.Logger;\n";
-    public static String DEFAULT_ADAPTERDESC = "com.zuche.baseModules.openAPI.annotation.AdapterDesc;\n";
-    public static String DEFAULT_EXCEPTION = "com.uc.mapi.intercepts.common.ExceptionIntercept;\n";
     public static String DEFAULT_LOGGERFACTORY = "org.slf4j.LoggerFactory;\n";
 
 }
