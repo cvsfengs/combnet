@@ -64,7 +64,7 @@ public class ZooKeeperOperator extends AbstractZooKeeper{
     public static void main(String[] args) {
         try {
             ZooKeeperOperator zkoperator = new ZooKeeperOperator();
-            zkoperator.connect("10.104.90.238:5181");
+            zkoperator.connect("");
 
             byte[] data = new byte[]{'a','b','c','d'};
 
