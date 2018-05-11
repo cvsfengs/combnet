@@ -3,7 +3,7 @@ package ucmapi.generator.wiki.table;
 import ucmapi.generator.wiki.pojo.BaseWikiPojo;
 
 /**
- * Created by ycfeng on 2016/8/30.
+ * Created on 2016/8/30.
  * 这样定义并不是一种好的实现方式,可以采用正则来匹配当前页面所有注释,IO流进行输入输出是将注解替换掉
  * 但是实现起来又比较别扭,实现过一小点,但是又给放弃了
  */
